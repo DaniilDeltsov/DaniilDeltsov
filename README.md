@@ -11,13 +11,21 @@ faster and cheaper.
 `Snowflake` · `ClickHouse` · `PostgreSQL` · `Docker` · `Kubernetes` · `Terraform` ·
 `Azure` · `AWS`
 
-**Featured project — [powerlake](https://github.com/DaniilDeltsov/powerlake)**
+**Featured projects**
 
-An end-to-end data platform for European power markets: streaming ingestion with
-Kafka, a partitioned lake, a ClickHouse warehouse, dbt models with tests and SCD2
-snapshots, Airflow orchestration and Metabase dashboards — all runnable with one
-`docker compose up`. Built to show a full modern data stack end to end: idempotent
-loads, incremental models, backfills, and data-quality checks.
+**[powerlake](https://github.com/DaniilDeltsov/powerlake)** — an end-to-end data
+platform for European power markets: streaming ingestion with Kafka, a partitioned
+lake, a ClickHouse warehouse, dbt models with tests and SCD2 snapshots, Airflow
+orchestration and Metabase dashboards — all runnable with one `docker compose up`.
+Built to show a full modern data stack end to end: idempotent loads, incremental
+models, backfills, and data-quality checks.
+
+**[sentinel](https://github.com/DaniilDeltsov/sentinel)** — a data quality platform
+for ClickHouse. Checks are defined in yaml and compiled to sql that runs inside the
+warehouse: nulls, uniqueness, freshness, row-count baselines, referential integrity,
+kafka topic lag. Failures turn into email alerts, dbt marts and Grafana dashboards;
+Airflow schedules the runs, and the demo ships with planted data issues so the first
+run already catches real problems.
 
 **Master's thesis — [Self-Supervised Learning for Autonomous Driving](https://github.com/DaniilDeltsov/Self-Supervised-Learning-for-Autonomous-Driving)**
 
